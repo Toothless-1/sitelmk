@@ -1,0 +1,55 @@
+<div class="div_task1">
+    <p class='title'>Глава 1. Нулевой цикл</p>
+    <p class="description">В этой главе собрано 25 простых задач. Для их решения не требуется ниче­го, кроме здравого
+        смысла
+        и простейших
+        вычислительных навыков.</p>
+    <p>
+    <p class="name_task">Задача 4</p>
+    <p class="condition_task"> Как при помощи чашечных весов без гирь разделить 24 кг гвоздей на две части — 9кг и 15кг. В качестве ответа введите количество взвешиваний.</p>
+    <div class = 'answer'>
+        <input [(ngModel)]="answer" type="number">
+        <button (click)="Answer()">
+            <p>Проверить ответ</p>
+            <img src="" alt="">
+        </button>
+        <button (click)="Answer()">
+            <p>Проверить ответ</p>
+            <img src="" alt="">
+        </button>
+        <button (click)="Answer()">
+            <p>Проверить ответ</p>
+            <img src="" alt="">
+        </button>
+    </div>
+    <p class="result_right" *ngIf="isRight; else wrongAnswer">
+         {{ result }}
+    </p>
+    <ng-template #wrongAnswer>
+        <p class="result_wrong">
+            {{ result }}
+        </p>
+    </ng-template>
+    
+    <p>
+        подсказка: {{ result1 }}
+    </p>
+    <p>
+        решение: {{ result2 }}
+    </p>
+    <nav class="nav_task">
+        Страницы:
+        <a class="page" href="task1">1</a>
+        <a class="page" href="">2</a>
+        <a class="page" href="">3</a>
+        <a class="page" href="">4</a>
+        <a class="page" href="">5</a>
+    </nav>
+</div>
+
+
+
+
+<!--<input (click)="Answer()" class="button_check_ans" type="submit" value="Проверить ответ">
+    <input (click)="Help()" class="button_check_ans" type="submit" value="     Подсказка      ">
+    <input (click)="rightAnswer()" class="button_check_ans" type="submit" value="Разбор и решение">-->>

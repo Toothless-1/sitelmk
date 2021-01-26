@@ -1,0 +1,54 @@
+.div_task1 {
+  margin-left: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #0000ff;
+}
+.description {
+  color: slategray;
+  text-align: left;
+}
+.name_task {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #0000ff;
+  text-decoration: none;
+}
+.name_task:hover {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ea00ff;
+  text-decoration: none;
+}
+.name_task:focus {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ea00ff;
+  text-decoration: none;
+}
+.nav_task {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+.page {
+  color: #0000ff;
+  text-decoration: none;
+}
+.page:hover {
+  color: #ff00ea;
+  text-decoration: underline;
+}
+
+.condition_task {
+  text-align: left;
+}
+.button_check_ans {
+  margin-left: 100px;
+}

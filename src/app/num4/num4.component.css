@@ -1,0 +1,47 @@
+.div_task1 {
+  margin-left: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #0000ff;
+}
+.description {
+  color: slategray;
+  text-align: left;
+}
+.name_task {
+  text-align: center;
+}
+
+.nav_task {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+.page {
+  color: #0000ff;
+  text-decoration: none;
+}
+.page:hover {
+  color: #ff00ea;
+  text-decoration: underline;
+}
+
+.condition_task {
+  text-align: left;
+}
+.button_check_ans {
+  margin-left: 100px;
+}
+
+.result_wrong {
+  color: red;
+}
+.result_right {
+  color: green;
+}
+button {
+  margin-left: 150px;
+}

@@ -1,0 +1,57 @@
+.div_task1 {
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+.title {
+  text-align: center;
+  color: #0000ff;
+}
+.description {
+  color: slategray;
+  text-align: left;
+}
+
+.task_href {
+  color: #0000ff;
+  text-decoration: none;
+}
+.task_href:hover {
+  color: #680596;
+  text-decoration: underline;
+}
+
+.nav_task {
+  white-space: nowrap;
+}
+.page {
+  color: #0000ff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.page:hover {
+  color: #ff00ea;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.name_task {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #0000ff;
+  text-decoration: none;
+}
+.name_task:hover {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ea00ff;
+  text-decoration: none;
+}
+.name_task:focus {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ea00ff;
+  text-decoration: none;
+}

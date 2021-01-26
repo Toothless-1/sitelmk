@@ -1,0 +1,89 @@
+.div_task1 {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #0000ff;
+}
+.description {
+  color: slategray;
+  text-align: left;
+}
+.name_task {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #0000ff;
+  text-decoration: none;
+  text-align: center;
+}
+.name_task:hover {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ea00ff;
+  text-decoration: none;
+}
+.name_task:focus {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #ea00ff;
+  text-decoration: none;
+}
+.nav_task {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+.page {
+  color: #0000ff;
+  text-decoration: none;
+}
+.page:hover {
+  color: #ff00ea;
+  text-decoration: underline;
+}
+
+.condition_task {
+  text-align: left;
+}
+.button_check_ans {
+  background-color: white;
+  border: white;
+  cursor: pointer;
+  width: 200px;
+}
+
+.name {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 250px 280px 280px 280px;
+  text-align: center;
+}
+
+.result-red {
+  color: red;
+}
+.result-green {
+  color: #32cd32;
+}
+
+.boy {
+  margin-top: 35px;
+}
+
+.numbersOfTascks {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  margin-top: 60px;
+  justify-content: space-between;
+}
+
+.chapter {
+  text-align: center;
+}

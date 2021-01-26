@@ -1,0 +1,13 @@
+.list_href {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #0000ff;
+}
+.list_href:hover {
+  text-decoration: underline;
+  color: #4b0082;
+}
+.list_href:focus {
+  text-decoration: underline;
+  color: #4b0082;
+}

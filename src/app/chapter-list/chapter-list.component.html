@@ -1,0 +1,7 @@
+<div *ngFor="let chapter of chapters">
+    <p>
+        <a class="list_href" [routerLink]='["chapter", chapter.id]'>
+            Глава {{chapter.number}}. {{chapter.name}}
+        </a>
+    </p>
+</div>

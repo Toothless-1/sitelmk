@@ -1,0 +1,40 @@
+<div class="div_task1">
+    <p class='title'>
+        Глава {{chapter.number}}. {{chapter.name}}
+    </p>
+    <p class="description">
+        {{chapter.description}}
+    </p>
+    <div *ngFor="let task of chapter.tasks">
+
+        <!-- <app-task [taskId]='task.id' [chapterId]='chapter.id'>
+                    
+                    </app-task> -->
+        <div>
+            <a [routerLink]='["/task", task.id]' [queryParams]='{"chapterID": chapter.id}' class="name_task">
+                Задача {{task.number}}
+            </a>
+            <div>
+                {{task.description}}
+
+            </div>
+        </div>
+
+        <!-- <div  *ngFor="let i of [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25]">
+        <div class="nav_task">
+            <a class="page" [routerLink]='["task", i.id]' [queryParams]='{"chapterID": chapter.id}'>
+            {{i}}
+        </a>
+    </div>
+        
+    </div> -->
+
+        <!-- <nav class="nav_task" >
+        Страницы:
+        <a class="page" href="task1">1</a>
+        <a class="page" href="page2">2</a>
+        <a class="page" href="">3</a>
+        <a class="page" href=''>4</a>
+        <a class="page" href="">5</a>
+    </nav> -->
+    </div>

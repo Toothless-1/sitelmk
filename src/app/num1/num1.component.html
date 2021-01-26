@@ -1,0 +1,57 @@
+<div>
+    <p class="name_task">
+        Задача {{task.number}}
+    </p>
+    <p class="condition_task"> {{task.description}} <br>
+        (Введите число)</p>
+
+    <input [(ngModel)]="answer" type="number">
+    <input (click)="checkAns()" class="button_check_ans" type="submit" value="Проверить ответ">
+    <input (click)="getHelp()" class="button_check_ans" type="submit" value="     Подсказка      ">
+    <input (click)="showSolution()" class="button_check_ans" type="submit" value="Разбори и решение">
+
+    <p class="result">
+        результат: {{ result }}
+    </p>
+    <div *ngIf="forHelp">
+        подсказка: {{task.helpText}}
+    </div>
+    <div *ngIf="solution">
+        решение: {{task.solution}}
+    </div>
+</div>
+
+
+<!-- <div class="div_task1">
+    <p class='title'>Глава 1. Нулевой цикл</p>
+    <p class="description">В этой главе собрано 25 простых задач. Для их решения не требуется ниче­го, кроме здравого смысла
+        и простейших
+        вычислительных навыков.</p>
+    <p>
+    <p class="name_task">Задача 1</p>
+    <p class="condition_task"> В стакане находятся бактерии. Через секунду каждая из бактерий делится пополам, затем каждая из получившихся бактерий
+    через секунду делит­ся пополам и так далее. Через минуту стакан полон. Через какое время стакан был заполнен наполовину?<br>
+    (Введите число)</p>
+    <input [(ngModel)]="answer" type="number">
+    <input (click)="Answer()" class="button_check_ans" type="submit" value="Проверить ответ">
+    <input (click)="Answer()" class="button_check_ans" type="submit" value="     Подсказка      ">
+    <input (click)="Answer()" class="button_check_ans" type="submit" value="Разбори и решение">
+    <p class="result">
+        результат: {{ result }}
+    </p>
+    <p>
+        подсказка:
+    </p>
+    <p>
+        решение:
+    </p>
+    <nav class="nav_task">
+        Страницы:
+        <a class="page" href="task1">1</a>
+        <a class="page" href="">2</a>
+        <a class="page" href="">3</a>
+        <a class="page" href="">4</a>
+        <a class="page" href="">5</a>
+    </nav>
+</div> -->
+

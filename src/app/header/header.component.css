@@ -1,0 +1,37 @@
+.header {
+  display: grid;
+  grid-template-columns: 500px auto;
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.left_header {
+  text-align: center;
+}
+
+.header__inner {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.nav__link {
+  text-decoration: none;
+  color: black;
+}
+.nav__link:hover {
+  text-decoration: underline;
+  color: #4b0082;
+}
+
+.text {
+  font-size: 25px;
+}
+.logo {
+  display: grid;
+  grid-template-columns: auto 250px;
+  text-align: center;
+}
+.cube {
+  margin-left: auto;
+}

@@ -1,0 +1,36 @@
+.div_task1 {
+  margin-left: 20px;
+}
+
+.title {
+  text-align: center;
+  color: #0000ff;
+}
+.description {
+  color: slategray;
+  text-align: center;
+}
+
+.task_href {
+  color: #0000ff;
+  text-decoration: none;
+}
+.task_href:hover {
+  color: #680596;
+  text-decoration: underline;
+}
+
+.nav_task {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin-left: 50%;
+}
+.page {
+  color: #0000ff;
+  text-decoration: none;
+}
+.page:hover {
+  color: #ff00ea;
+  text-decoration: underline;
+}

@@ -1,0 +1,63 @@
+<div *ngIf='task' class="div_task1">
+    <p class="name_task">
+        Задача {{task.number}}
+    </p>
+    <p class="condition_task"> {{task.description}} <br>
+        (Введите число)</p>
+    <div>
+        Ваш ответ: <input [(ngModel)]="answer" type="number">
+        <div class='name'>
+
+            <div *ngIf='isRight==null'>
+
+            </div>
+
+            <div *ngIf='isRight'>
+                <img src="assets\img\ВерныйМальчик.jpg" alt="" width="60%" height="60%" class="boy">
+            </div>
+
+            <div *ngIf='isRight==false'>
+                <img src="assets\img\НеверныйМальчик.jpg" alt="" width="60%" height="60%" class="boy">
+            </div>
+
+            <button (click)="checkAns()" class="button_check_ans" type="submit">
+                <p>Проверить ответ</p>
+                <img src="assets\img\ПроверитьОтвет.jpg" alt="" width="60%" height="60%">
+            </button>
+            <button (click)="getHelp()" class="button_check_ans" type="submit">
+                <p>Подсказка</p>
+                <img src="assets\img\Подсказка.jpg" alt="" width="60%" height="60%">
+            </button>
+            <button (click)="showSolution()" class="button_check_ans" type="submit">
+                <p>Разбор и решение</p>
+                <img src="assets\img\РазборРешение.jpg" alt="" width="60%" height="60%">
+            </button>
+        </div>
+
+
+        <div>
+            <div *ngIf="!isRight" class="result-red">
+                {{ result }}
+            </div>
+            <div *ngIf="isRight" class="result-green">
+                {{ result }}
+
+            </div>
+        </div>
+        <div *ngIf="forHelp">
+            Подсказка: {{task.helpText}}
+        </div>
+        <div *ngIf="solution">
+            Решение: {{task.solution}}
+        </div>
+    </div>
+
+    <div class="numbersOfTascks">
+        <div *ngFor="let taskID of numbersOfChapterTasks">
+            <a [style.color]="taskID===taskId ? 'black':'blue'" [routerLink]='["/task", taskID]'
+                [queryParams]='{"chapterID": chapterId}'>
+                {{ taskID+1 }}
+            </a>
+        </div>
+    </div>
+</div>
